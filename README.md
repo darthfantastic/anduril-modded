@@ -1,3 +1,6 @@
+## Updated for some useful defaults for me
+Wurkkos TS10 - Disabled 3C toggle for ramped/stepped output in Simple UI, disabled blinkies/aux settings in Simple UI
+
 # Anduril Flashlight Firmware + FSM Flashlight UI Toolkit
 
 Anduril is a user interface for flashlights.  It is written with FSM, a UI
