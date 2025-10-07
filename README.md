@@ -1,5 +1,10 @@
 ## Updated for some useful defaults for me
-Wurkkos TS10 - Disabled 3C toggle for ramped/stepped output in Simple UI, disabled blinkies/aux settings in Simple UI
+Wurkkos TS10 
+  - Disabled 3C toggle for ramped/stepped output in Simple UI
+  - Disabled blinkies/aux settings in Simple UI
+  - Set ramping floor to 1 in Simple UI
+  - Set RGB LED to off when light is off (not voltage)
+  - Set RGB LED to low, red when light is locked out 
 
 # Anduril Flashlight Firmware + FSM Flashlight UI Toolkit
 
