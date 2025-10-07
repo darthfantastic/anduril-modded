@@ -21,6 +21,9 @@
 // (i.e. not 150; original config had it at 144/150, or DD FET 204/255)
 // 20 47 [75] 102 130
 // 10 30 50 70 [90] 110 130
+#ifdef SIMPLE_UI_FLOOR
+#undef SIMPLE_UI_FLOOR
+#endif
 #define SIMPLE_UI_FLOOR  1
 #define SIMPLE_UI_CEIL   130
 #define SIMPLE_UI_STEPS  7
