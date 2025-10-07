@@ -31,6 +31,9 @@
 // disable 3C to toggle between smooth and stepped ramping in Simple UI (can still toggle in Advanced UI)
 #undef USE_SIMPLE_UI_RAMPING_TOGGLE
 
+// enable 2 click turbo (Anduril 1 style)
+#define DEFAULT_2C_STYLE 1
+
 //set default RGB led off behavior to off
 #define RGB_LED_OFF_DEFAULT 0x00
 
