@@ -57,7 +57,7 @@
 // at Wurkkos's request, reduce the Simple UI ceiling a little bit
 // (i.e. not 150; original config had it at 144/150, or DD FET 204/255)
 // 10 30 50 70 [90] 110 130
-#define SIMPLE_UI_FLOOR  10
+#define SIMPLE_UI_FLOOR  1
 #define SIMPLE_UI_CEIL   130
 #define SIMPLE_UI_STEPS  7
 
@@ -80,4 +80,3 @@
 
 // enable factory reset on 13H without loosening tailcap (required)
 #define USE_SOFT_FACTORY_RESET
-
