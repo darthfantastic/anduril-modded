@@ -81,6 +81,11 @@
 // enable factory reset on 13H without loosening tailcap (required)
 #define USE_SOFT_FACTORY_RESET
 
+// disable 3C to toggle between smooth and stepped ramping in Simple UI (can still toggle in Advanced UI)
+#ifdef USE_SIMPLE_UI_RAMPING_TOGGLE
+#undef USE_SIMPLE_UI_RAMPING_TOGGLE
+#endif
+
 //set default RGB led off behavior to off
 #ifdef RGB_LED_OFF_DEFAULT
 #undef RGB_LED_OFF_DEFAULT
