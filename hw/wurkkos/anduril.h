@@ -3,10 +3,12 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 #pragma once
 
-// allow Aux Config and Strobe Modes in Simple UI
-#define USE_EXTENDED_SIMPLE_UI
+// Disable Aux Config and Strobe Modes in Simple UI
+#ifdef USE_EXTENDED_SIMPLE_UI
+#undef USE_EXTENDED_SIMPLE_UI
+#endif
 
-// Allow 3C in Simple UI for switching between smooth and stepped ramping
+// Disable 3C in Simple UI for switching between smooth and stepped ramping
 #ifdef USE_SIMPLE_UI_RAMPING_TOGGLE
 #undef USE_SIMPLE_UI_RAMPING_TOGGLE
 #endif
