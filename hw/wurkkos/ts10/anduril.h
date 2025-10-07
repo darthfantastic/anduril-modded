@@ -57,7 +57,7 @@
 // at Wurkkos's request, reduce the Simple UI ceiling a little bit
 // (i.e. not 150; original config had it at 144/150, or DD FET 204/255)
 // 10 30 50 70 [90] 110 130
-#define SIMPLE_UI_FLOOR  1
+#define SIMPLE_UI_FLOOR  10
 #define SIMPLE_UI_CEIL   130
 #define SIMPLE_UI_STEPS  7
 
@@ -80,26 +80,3 @@
 
 // enable factory reset on 13H without loosening tailcap (required)
 #define USE_SOFT_FACTORY_RESET
-
-// disable 3C to toggle between smooth and stepped ramping in Simple UI (can still toggle in Advanced UI)
-#ifdef USE_SIMPLE_UI_RAMPING_TOGGLE
-#undef USE_SIMPLE_UI_RAMPING_TOGGLE
-#endif
-
-//set default RGB led off behavior to off
-#ifdef RGB_LED_OFF_DEFAULT
-#undef RGB_LED_OFF_DEFAULT
-#endif
-#define RGB_LED_OFF_DEFAULT 0x00
-
-//set default RGB led lockout behavior to low, red
-#ifdef RGB_LED_LOCKOUT_DEFAULT
-#undef RGB_LED_LOCKOUT_DEFAULT
-#endif
-#define RGB_LED_LOCKOUT_DEFAULT 0x10
-
-//disable post_off_voltage by default
-#ifdef DEFAULT_POST_OFF_VOLTAGE_SECONDS
-#undef DEFAULT_POST_OFF_VOLTAGE_SECONDS
-#endif
-#define DEFAULT_POST_OFF_VOLTAGE_SECONDS 0
