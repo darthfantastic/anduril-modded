@@ -7,7 +7,9 @@
 #define USE_EXTENDED_SIMPLE_UI
 
 // Allow 3C in Simple UI for switching between smooth and stepped ramping
-#define USE_SIMPLE_UI_RAMPING_TOGGLE
+#ifdef USE_SIMPLE_UI_RAMPING_TOGGLE
+#undef USE_SIMPLE_UI_RAMPING_TOGGLE
+#endif
 
 // enable 2 click turbo (Anduril 1 style)
 #define DEFAULT_2C_STYLE 1
