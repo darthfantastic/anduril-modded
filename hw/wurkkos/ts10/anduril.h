@@ -81,19 +81,19 @@
 // enable factory reset on 13H without loosening tailcap (required)
 #define USE_SOFT_FACTORY_RESET
 
-//set RGB led off behavior to off
+//set default RGB led off behavior to off
 #ifdef RGB_LED_OFF_DEFAULT
 #undef RGB_LED_OFF_DEFAULT
 #endif
 #define RGB_LED_OFF_DEFAULT 0x00
 
-//set RGB led lockout behavior to low, red
+//set default RGB led lockout behavior to low, red
 #ifdef RGB_LED_LOCKOUT_DEFAULT
 #undef RGB_LED_LOCKOUT_DEFAULT
 #endif
 #define RGB_LED_LOCKOUT_DEFAULT 0x10
 
-//disable post_off_voltage
+//disable post_off_voltage by default
 #ifdef DEFAULT_POST_OFF_VOLTAGE_SECONDS
 #undef DEFAULT_POST_OFF_VOLTAGE_SECONDS
 #endif
