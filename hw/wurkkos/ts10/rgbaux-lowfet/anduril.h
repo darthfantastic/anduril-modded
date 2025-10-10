@@ -34,11 +34,11 @@
 // enable 2 click turbo in Simple UI (Anduril 1 style)
 #define DEFAULT_2C_STYLE_SIMPLE 1
 
-//set default RGB led off behavior to off
+// set default RGB led off behavior to off
 #define RGB_LED_OFF_DEFAULT 0x00
 
-//set default RGB led lockout behavior to low, red
+// set default RGB led lockout behavior to low, red
 #define RGB_LED_LOCKOUT_DEFAULT 0x10
 
-//disable post_off_voltage by default
+// disable post_off_voltage by default
 #define DEFAULT_POST_OFF_VOLTAGE_SECONDS 0
