@@ -1,10 +1,16 @@
 ## Updated for some useful defaults for me
-Wurkkos TS10 
+Wurkkos TS10
   - Disabled 3C toggle for ramped/stepped output in Simple UI
   - Disabled blinkies/aux settings in Simple UI
   - Set ramping floor to 1 in Simple UI
   - Set RGB LED to off when light is off (not voltage)
-  - Set RGB LED to low, red when light is locked out 
+  - Set RGB LED to low, red when light is locked out
+Wurrkos TS11
+  - Disabled 3C toggle for ramped/stepped output in Simple UI
+  - Disabled blinkies/aux settings in Simple UI
+  - Set ramping floor to 1 in Simple UI
+  - Set default RGB led off behavior to low, blue
+  - Set default RGB led lockout behavior to low, red
 
 # Anduril Flashlight Firmware + FSM Flashlight UI Toolkit
 
@@ -81,14 +87,14 @@ convenient.
 
 ### Prerequisites:
 
-- AVR toolchain packages:  
+- AVR toolchain packages:
   `sudo apt install gcc-avr avr-libc binutils-avr`
 
-- Other misc packages:  
+- Other misc packages:
   `sudo apt install git wget unzip bash`
 
 - Atmel DFPs (Device Family Packs).  A small script is included to
-  download and install these for you:  
+  download and install these for you:
   `./make dfp`
 
 ### Building
@@ -151,4 +157,3 @@ If you'd like to help, there are several ways...
     a lot, consider adding it to the documentation here.
 
   - Ask manufacturers to use this firmware, and to support its development.
-
