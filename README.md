@@ -5,6 +5,7 @@ Wurkkos TS10
   - Set ramping floor to 1 in Simple UI
   - Set RGB LED to off when light is off (not voltage)
   - Set RGB LED to low, red when light is locked out
+
 Wurrkos TS11
   - Disabled 3C toggle for ramped/stepped output in Simple UI
   - Disabled blinkies/aux settings in Simple UI
