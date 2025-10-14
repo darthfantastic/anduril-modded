@@ -21,15 +21,19 @@
 // (i.e. not 150; original config had it at 144/150, or DD FET 204/255)
 // 20 47 [75] 102 130
 // 10 30 50 70 [90] 110 130
-#ifdef SIMPLE_UI_FLOOR
+
 #undef SIMPLE_UI_FLOOR
-#endif
+#undef SIMPLE_UI_CEIL
+#undef SIMPLE_UI_STEPS
+
 #define SIMPLE_UI_FLOOR  1
 #define SIMPLE_UI_CEIL   130
-#define SIMPLE_UI_STEPS  7
+#define SIMPLE_UI_STEPS  5
 
-// disable 3C to toggle between smooth and stepped ramping in Simple UI (can still toggle in Advanced UI)
-// #undef USE_SIMPLE_UI_RAMPING_TOGGLE
+// Disable Aux Config and Strobe Modes in Simple UI
+#ifdef USE_EXTENDED_SIMPLE_UI
+#undef USE_EXTENDED_SIMPLE_UI
+#endif
 
 // enable 2 click turbo in Simple UI (Anduril 1 style)
 #define DEFAULT_2C_STYLE_SIMPLE 1

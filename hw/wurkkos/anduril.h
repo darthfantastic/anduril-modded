@@ -3,10 +3,8 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 #pragma once
 
-// Disable Aux Config and Strobe Modes in Simple UI
-#ifdef USE_EXTENDED_SIMPLE_UI
-#undef USE_EXTENDED_SIMPLE_UI
-#endif
+// allow Aux Config and Strobe Modes in Simple UI
+#define USE_EXTENDED_SIMPLE_UI
 
 // Enable 3C in Simple UI for switching between smooth and stepped ramping
 #define USE_SIMPLE_UI_RAMPING_TOGGLE
@@ -25,4 +23,3 @@
 // higher temperature limit because attiny1616 is more accurate
 #undef DEFAULT_THERM_CEIL
 #define DEFAULT_THERM_CEIL 50
-

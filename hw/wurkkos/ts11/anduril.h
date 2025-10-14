@@ -23,9 +23,15 @@
 #undef SIMPLE_UI_FLOOR
 #undef SIMPLE_UI_CEIL
 #undef SIMPLE_UI_STEPS
+
 #define SIMPLE_UI_FLOOR  1
 #define SIMPLE_UI_CEIL   130
 #define SIMPLE_UI_STEPS  7
+
+// Disable Aux Config and Strobe Modes in Simple UI
+#ifdef USE_EXTENDED_SIMPLE_UI
+#undef USE_EXTENDED_SIMPLE_UI
+#endif
 
 // disable 3C to toggle between smooth and stepped ramping in Simple UI (can still toggle in Advanced UI)
 #undef USE_SIMPLE_UI_RAMPING_TOGGLE
