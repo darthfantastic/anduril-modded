@@ -1,16 +1,18 @@
 ## Updated for some useful defaults for me
 Changed ramp toggle to 6C in all modes (for simplicity)
 
-Wurkkos TS10
+Wurkkos TS10 (rgbaux-lowfet) and TS10 Max (rgbaux)
   - Disabled aux settings in Simple UI (still configurable in Advanced UI)
   - Set ramping floor to 1 in Simple UI
+  - Set ramp steps to 5 in Simple UI
   - Set RGB LED lockout behavior to off
   - Set RGB LED lockout behavior to low, red
 
 Wurrkos TS11
-  - Disabled 3C toggle for ramped/stepped output in Simple UI (can still toggle in Advanced UI)
+  - Disabled 6C toggle for ramped/stepped output in Simple UI (can still toggle in Advanced UI)
   - Disabled aux settings in Simple UI (still configurable in Advanced UI)
   - Set ramping floor to 1 in Simple UI
+  - Set ramp steps to 5 in Simple UI
   - Set default RGB LED off behavior to low, blue
   - Set default RGB LED lockout behavior to low, red
 

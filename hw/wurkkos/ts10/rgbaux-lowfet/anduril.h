@@ -14,35 +14,3 @@
 // FET half power:
 #define PWM2_LEVELS     0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  2,  3,  4,  5,  6,  7,  8, 10, 11, 12, 14, 15, 17, 19, 20, 22, 24, 26, 27, 29, 31, 33, 35, 37, 39, 42, 44, 46, 48, 51, 53, 55, 58, 60, 63, 65, 68, 70, 73, 75, 78, 81, 84, 86, 89, 92, 95, 98,101,103,106,109,112,116,119,122,125,128
 #define PWM_TOPS     4095,2893,3917,2806,3252,2703,2684,2660,2640,2370,3000,2900,2630,2549,2246,2193,2030,1961,1889,1716,1642,1569,1497,1428,1290,1232,1176,1122,1070,976,932,890,849,779,745,685,656,605,579,536,514,476,457,424,407,379,364,340,327,314,302,291,280,276,266,262,257,253,253,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255
-
-// my changes
-//
-// at Wurkkos's request, reduce the Simple UI ceiling a little bit
-// (i.e. not 150; original config had it at 144/150, or DD FET 204/255)
-// 20 47 [75] 102 130
-// 10 30 50 70 [90] 110 130
-
-#undef SIMPLE_UI_FLOOR
-#undef SIMPLE_UI_CEIL
-#undef SIMPLE_UI_STEPS
-
-#define SIMPLE_UI_FLOOR  1
-#define SIMPLE_UI_CEIL   130
-#define SIMPLE_UI_STEPS  5
-
-// Disable Aux Config and Strobe Modes in Simple UI
-#ifdef USE_EXTENDED_SIMPLE_UI
-#undef USE_EXTENDED_SIMPLE_UI
-#endif
-
-// enable 2 click turbo in Simple UI (Anduril 1 style)
-#define DEFAULT_2C_STYLE_SIMPLE 1
-
-// set default RGB led off behavior to off
-#define RGB_LED_OFF_DEFAULT 0x00
-
-// set default RGB led lockout behavior to low, red
-#define RGB_LED_LOCKOUT_DEFAULT 0x10
-
-// disable post_off_voltage by default
-#define DEFAULT_POST_OFF_VOLTAGE_SECONDS 0

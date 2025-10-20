@@ -54,12 +54,12 @@
 // (i.e. not 150; original config had it at 144/150, or DD FET 204/255)
 // 20 47 [75] 102 130
 // 10 30 50 70 [90] 110 130
-#define SIMPLE_UI_FLOOR  10
-#define SIMPLE_UI_CEIL   130
-#define SIMPLE_UI_STEPS  7
+#define SIMPLE_UI_FLOOR  1
+#define SIMPLE_UI_CEIL   125
+#define SIMPLE_UI_STEPS  5
 
 // stop panicking at ~50% power
-#define THERM_FASTER_LEVEL 130  // throttle back faster when high
+#define THERM_FASTER_LEVEL 125  // throttle back faster when high
 
 // show each channel while it scroll by in the menu
 #define USE_CONFIG_COLORS
@@ -83,3 +83,20 @@
 // enable factory reset on 13H without loosening tailcap (required)
 #define USE_SOFT_FACTORY_RESET
 
+// added by me
+// Disable Aux Config and Strobe Modes in Simple UI
+#ifdef USE_EXTENDED_SIMPLE_UI
+#undef USE_EXTENDED_SIMPLE_UI
+#endif
+
+// enable 2 click turbo in Simple UI (Anduril 1 style)
+#define DEFAULT_2C_STYLE_SIMPLE 1
+
+// set default RGB led off behavior to off
+#define RGB_LED_OFF_DEFAULT 0x00
+
+// set default RGB led lockout behavior to low, red
+#define RGB_LED_LOCKOUT_DEFAULT 0x10
+
+// disable post_off_voltage by default
+#define DEFAULT_POST_OFF_VOLTAGE_SECONDS 0
